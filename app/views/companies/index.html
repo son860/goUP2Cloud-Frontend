@@ -1,0 +1,66 @@
+<md-card>
+<md-toolbar class="md-table-toolbar md-default" ng-show="!options.rowSelection || !selected.length">
+  <div class="md-toolbar-tools">
+    
+
+    
+      
+      <input  ng-model="search" type="text" placeholder="Companies" >
+      <md-icon ng-class="md-48" class="material-icons step">search</md-icon>
+    
+
+    <span flex></span>
+    <md-button class="md-icon-button" ng-click="getData()">
+      <md-icon>refresh</md-icon>
+    </md-button>
+    <md-button class="md-icon-button md-accent md-raised md-mini  " aria-label="Add" ng-click="addItem()">
+      <md-icon>add</md-icon>
+    </md-button>
+
+    
+    
+  </div>
+</md-toolbar>
+
+<md-toolbar class="md-table-toolbar alternate" ng-show="options.rowSelection && selected.length">
+  <div class="md-toolbar-tools">
+    <span>{{selected.length}} {{selected.length > 1 ? 'items' : 'item'}} selected</span>
+    <span flex></span>
+    <md-button class="md-icon-button">
+      <md-icon>delete</md-icon>
+    </md-button>
+  </div>
+</md-toolbar>
+
+<!-- exact table from live demo -->
+<md-table-container>
+  <table md-table md-row-select multiple ng-model="selected" md-progress="promise">
+    <thead md-head md-order="query.order" >
+      <tr md-row>
+        <th md-column md-order-by="name"><span>Company</span></th>        
+        <th md-column md-order-by="fantasy"><span>Fantasy</span></th>        
+        <th md-column>CNPJ</th>
+        <th md-column>Address</th>
+        <th md-column>City</th>
+        <th md-column >UF</th>
+        <th md-column>E-mail</th>        
+      </tr>
+    </thead>
+    <tbody md-body>
+      <tr md-row md-select="dessert" md-select-id="name" md-auto-select ng-repeat="company in data | orderBy:query.order | filter:search">
+        <td ng-if="company.name" md-cell>{{company.name}}</td>
+        <td ng-if="!company.name" trabslate md-cell>Searching data for {{company.cnpj}} </td>
+        <td md-cell>{{company.fantasy}}</td>
+        <td md-cell>{{company.cnpj}}</td>
+        <td md-cell>{{company.address}}, {{company.number}}</td>
+        <td md-cell>{{company.city.name}}</td>
+        <td md-cell>{{company.city.state.name}}</td>
+        <td md-cell>{{company.email}}</td>
+        
+      </tr>
+    </tbody>
+  </table>
+</md-table-container>
+
+
+</md-card>

@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<title>goUP2Cloud - Cadastro Administrador</title>
+		<link rel="stylesheet" type="text/css" href="css/cadastro-administrador.css">
+		<link href="https://fonts.googleapis.com/css?family=Varela+Round" rel="stylesheet">
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+		<script src="http://cdn.jsdelivr.net/jquery.validation/1.15.1/jquery.validate.min.js"></script>
+	</head>
+
+    <!-- Corpo da página -->
+	<body>
+
+		<img src="img/faixa.png" class="faixa-topo">
+
+		<section id="combo-form">
+
+            <figure id="logotype">
+            	<img src="img/logo.png" class="logo">
+            </figure>
+
+            <!-- Aqui começa o form -->
+			<form class="inputs" action="" method="">
+
+				<p class="title-form">Escolha Seu Perfil</p>
+
+                <a href="#" class="profile-disabled">Administrador</a><br><br>
+				<input type="text" name="nome" placeholder="Nome completo:" class="input" required />
+				<input type="text" name="rg" placeholder="RG:" class="input" id="rg" required /><br>
+				<input type="text" name="cpf" placeholder="CPF:" class="input" required/>
+				<input type="email" name="email" placeholder="E-mail:" class="input" id="email" required /><br>
+				<input type="text" name="razaosocial" placeholder="Razão social:" class="input" required />
+				<input type="text" name="nomedousuario" placeholder="Nome do usuário:" class="input" id="username" required /><br>
+				<input type="text" name="senha" placeholder="Senha:" class="input" required/>
+				<input type="text" name="confirmarsenha" placeholder="Confirmar senha:" class="input" id="confirmsenha" required /><br><br>
+
+				<div id="checkbox-combo">
+					<div id="checkbox-1" name="checkbox" required></div><br>
+				    <p class="txt-checkbox-1">Li e concordo com os termos de serviço</p>
+				</div>
+
+				<br><br>
+				<input type="submit" value="Prosseguir" class="btn-blue">
+
+			</form>
+			<!-- Aqui termina o form -->
+		</section>
+
+		<script type="text/javascript" src="js/checkbox-validator.js"></script>
+		<script type="text/javascript" src="js/form-validator.js"></script>
+
+	</body><!-- Fim do Corpo da página -->
+</html>

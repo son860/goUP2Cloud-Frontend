@@ -1,0 +1,85 @@
+   <!--[if lt IE 7]>
+      <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+      <![endif]-->
+      <md-sidenav ng-clock layout="column" class="md-sidenav-left md-whiteframe-z2" md-component-id="left" md-is-locked-open="auth.uid">
+   <md-toolbar layout-align="center center" class="md-tall md-hue-2" flex>
+        
+        <div layout="column"  class="md-toolbar-tools-bottom inset">
+          <img style="width: 70%;" src="images/logo.png">
+          
+          
+        </div>
+      </md-toolbar>
+      
+     
+     
+    <md-list>
+      <md-item ng-click="toggleSidenav('left')">
+
+        
+
+        
+
+        <a class="md-primary" ng-if="auth.uid" href="#/">
+          <md-item-content md-ink-ripple layout="row" layout-align="start center">
+            <div class="inset">
+              <md-icon>cloud</md-icon>
+            </div>
+            <div class="inset"> <span translate> Notas </span>
+            </div>
+          </md-item-content>
+        </a>   
+
+        <a class="md-primary" ng-if="auth.uid" href="#/companies">
+          <md-item-content md-ink-ripple layout="row" layout-align="start center">
+            <div class="inset">
+              <md-icon>business</md-icon>
+            </div>
+            <div class="inset"> <span translate> Companies </span>
+            </div>
+          </md-item-content>
+        </a>   
+
+
+        <a class="md-primary" ng-if="auth.uid" href="#/account">
+          <md-item-content md-ink-ripple layout="row" layout-align="start center">
+            <div class="inset">
+              <md-icon>settings</md-icon>
+            </div>
+            <div translate class="inset">Account
+            </div>
+          </md-item-content>
+        </a>   
+
+        
+        <md-divider></md-divider>
+
+        <a class="md-primary"  ng-if="auth.uid" ng-click="logout()">
+          <md-item-content md-ink-ripple layout="row" layout-align="start center">
+            <div class="inset">
+              <md-icon>power_settings_new</md-icon>
+            </div>
+            <div translate class="inset">Logout
+            </div>
+          </md-item-content>
+        </a>   
+
+        <a class="md-primary" ng-if="!auth" href="#/login">
+          <md-item-content md-ink-ripple layout="row" layout-align="start center">
+            <div class="inset">
+              <md-icon>power_settings_new</md-icon>
+            </div>
+            <div translate class="inset">Login
+            </div>
+          </md-item-content>
+        </a> 
+        
+      </md-item>
+
+
+    </md-list>
+  </md-sidenav>
+
+
+
+  

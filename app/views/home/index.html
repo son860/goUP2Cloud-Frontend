@@ -1,0 +1,106 @@
+<style type="text/css">
+  /*md-input-container.md-input-invalid > md-icon {
+    color: red; }
+
+.md-input-has-value.big-form > input {
+    font-size: 30px;
+  }*/
+</style>
+
+<div layout="row" layout-align="center center" flex ng-show="!auth">
+  
+
+  <div class="col-md-4" ng-class="{'animated bounce': !register}" ng-show="!register">
+    <!--Form-->
+    <div class="card wow fadeInRight">
+      <div class="card-block">
+        <!--Header-->
+        <div class="text-xs-center">
+          <h3><i class="fa fa-user"></i> Login:</h3>
+                      
+          <hr>
+          
+        </div>
+        <!--Body-->
+
+        <br>
+
+        <form name="form">  
+          <md-input-container class="md-block big-form">
+            <md-icon ng-class="md-48" class="material-icons step">email</md-icon>
+            <input name="email" ng-model="loginForm.email" type="email" placeholder="Your email" ng-pattern="/^.+@.+\..+$/" ng-required="true">
+            <my-bootstrap-show-errors></my-bootstrap-show-errors>        
+          </md-input-container>
+
+          <md-input-container class="md-block">
+            <md-icon ng-class="md-48" class="material-icons step">lock</md-icon>
+            <input name="password" minlength="8" maxlength="100" ng-model="loginForm.password" type="password" placeholder="Your password" ng-required="true">
+            <my-bootstrap-show-errors></my-bootstrap-show-errors>        
+          </md-input-container>
+
+          <div class="text-xs-center">          
+            <md-button ng-click='form.$valid ? login("email") : submitted=true;' class="md-raised md-accent">Sign In</md-button>
+          </div>    
+        </form>
+<br>
+        <!--Footer-->
+        <div class="options text-xs-right">
+          <p>Not a member? <a ng-click="register = true" href="">Sign Up</a></p>
+          <p>Forgot <a href="#">Password?</a></p>
+        </a></p>
+      </div>
+    </div>
+  </div>
+  <!--/.Form-->
+</div>
+
+
+
+
+
+<div class="col-md-4" ng-class="{'animated bounce': register}" ng-show="register">
+  <!--Form-->
+  <div class="card wow fadeInRight">
+    <div class="card-block">
+      <!--Header-->
+      <div class="text-xs-center">
+        <h3><i class="fa fa-user"></i> Register:</h3>        
+      </div>
+      <br />
+      <!--Body-->
+      <form name="createAccount">
+        <md-input-container class="md-block">
+          <md-icon ng-class="md-48" class="material-icons step">email</md-icon>
+          <input name="email2" ng-model="createAccountForm.email" type="email" placeholder="Your email" ng-pattern="/^.+@.+\..+$/" ng-required="true">
+          <my-bootstrap-show-errors></my-bootstrap-show-errors>        
+        </md-input-container>
+
+        <md-input-container class="md-block">
+          <md-icon ng-class="md-48" class="material-icons step">lock</md-icon>
+          <input name="password" minlength="8" maxlength="100" ng-model="createAccountForm.password" type="password" placeholder="Your password" ng-required="true">
+          <my-bootstrap-show-errors></my-bootstrap-show-errors>        
+        </md-input-container>
+
+        <md-input-container class="md-block">
+          <md-icon ng-class="md-48" class="material-icons step">lock</md-icon>
+          <input name="password_confirmation" minlength="8" maxlength="100" 
+          ng-model="createAccountForm.password_confirmation" type="password" 
+          placeholder="Password confirmation" ng-required="true" 
+          ng-pattern="createAccountForm.password" >
+          <my-bootstrap-show-errors></my-bootstrap-show-errors>        
+        </md-input-container>
+      </form>
+      <div class="text-xs-center">
+
+        <md-button ng-click='createAccount.$valid ? accountCreate() : submitted=true;' class="md-raised md-accent">Sign Up</md-button>
+        </div>
+        <br />
+        <!--Footer-->
+        <div class="options text-xs-right">        
+          <p  >Already have an account? <a ng-click="register = false" href="">Log in</a></p>
+        </div>
+      </div>
+    </div>
+    <!--/.Form-->
+  </div>
+  </div>

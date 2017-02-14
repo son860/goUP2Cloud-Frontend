@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Required meta tags always come first -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <title>goUP2Cloud </title>
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.0/css/font-awesome.min.css">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+  rel="stylesheet">
+  <link rel="stylesheet" href="bower_components/MDBootstrap/css/bootstrap.min.css" />
+  <link href="bower_components/angular-material-data-table/dist/md-data-table.min.css" rel="stylesheet" type="text/css"/>
+
+  <link rel="stylesheet" href="bower_components/MDBootstrap/css/mdb.min.css" />
+  <link rel="stylesheet" href="bower_components/angular-material/angular-material.css" />
+</head>
+
+<body ng-app="appApp"  layout="row" ng-controller="AppCtrl" ng-clock>
+  <!--Double Navigation-->
+  <div  ng-include="'views/header.html'"></div>
+  <!--/Double Navigation-->
+
+  <!--Main layout-->
+
+  <md-content flex layout="column" class="relative" layout-fill>
+    <md-toolbar class="md-primary ">
+      <div class="md-toolbar-tools">
+        <md-button ng-click="toggleSidenav('left')" aria-label="Menu">
+          <md-icon>menu</md-icon>
+        </md-button>
+        <h3>
+          goUP2Cloud
+        </h3>
+      </div>
+    </md-toolbar>
+
+
+    <div ng-view  flex layout="column"></div>
+
+
+
+    <div ng-include="'views/footer.html'"></div>
+  </md-content>
+
+  
+  <!--/Main layout-->
+
+  <!--Footer-->
+
+
+  <!--/.Footer-->
+
+
+
+
+  <script src="bower_components/MDBootstrap/js/jquery-2.2.3.min.js"></script>
+  <script src="bower_components/tether/dist/js/tether.js"></script>
+  <script src="bower_components/MDBootstrap/js/bootstrap.min.js"></script>
+  <script src="bower_components/MDBootstrap/js/mdb.min.js"></script>
+  
+
+
+  <!-- build:js(.) scripts/vendor.js -->
+  <!-- bower:js -->
+  <script src="bower_components/angular/angular.js"></script>
+  <script src="bower_components/angular-animate/angular-animate.js"></script>
+  <script src="bower_components/angular-cookies/angular-cookies.js"></script>
+  <script src="bower_components/angular-resource/angular-resource.js"></script>
+  <script src="bower_components/angular-route/angular-route.js"></script>
+  <script src="bower_components/angular-sanitize/angular-sanitize.js"></script>
+  <script src="bower_components/angular-touch/angular-touch.js"></script>
+  <script src="bower_components/moment/moment.js"></script>
+  <script src="bower_components/angular-moment/angular-moment.js"></script>
+  <script src="bower_components/angular-gettext/dist/angular-gettext.js"></script>
+  <script src="bower_components/firebase/firebase.js"></script>
+  <script src="bower_components/angularfire/dist/angularfire.js"></script>
+  <script src="bower_components/angular-messages/angular-messages.js"></script>
+  <script src="bower_components/ng-file-upload/ng-file-upload.js"></script>
+  <script src="bower_components/angular-cookie/angular-cookie.js"></script>
+  <script src="bower_components/ng-token-auth/dist/ng-token-auth.js"></script>
+  <script src="bower_components/angular-aria/angular-aria.js"></script>
+  <script src="bower_components/angular-material/angular-material.js"></script>
+  <script src="bower_components/angular-material-icons/angular-material-icons.min.js"></script>
+  <script src="bower_components/angular-toastr/dist/angular-toastr.tpls.js"></script>
+  <script src="bower_components/angular-material-data-table/dist/md-data-table.js"></script>
+  <script src="bower_components/cpf_cnpj/build/cpf_cnpj.js"></script>
+  <script src="bower_components/ng-cpf-cnpj/lib/ngCpfCnpj.js"></script>
+  <script src="bower_components/angularLocalStorage/dist/angularLocalStorage.min.js"></script>
+  <!-- endbower -->
+  <!-- endbuild -->
+
+  <!-- build:js({.tmp,app}) scripts/scripts.js -->
+  
+  
+  <script src="scripts/app.js"></script>
+  <script src="scripts/services/resources.js"></script>  
+  <script src="scripts/services/interceptors.js"></script>
+  
+  <script src="scripts/translations.js"></script>
+  <script src="scripts/controllers/main.js"></script>
+  <script src="scripts/controllers/companies.js"></script> 
+  <script src="scripts/directives/myBootstrapShowErrors.js"></script>  
+  <script src="scripts/directives/mdb.js"></script>  
+  <script src="scripts/routes.js"></script>
+  
+  
+  
+  
+  
+  <script src="scripts/controllers/home.js"></script>
+
+  <!-- endbuild -->
+
+
+</body>
+
+</html>

@@ -1,0 +1,34 @@
+{
+  "name": "vivacarros",
+  "version": "0.0.1",
+  "dependencies": {
+    "angular": "^1.3.0",
+    "angular-animate": "^1.3.0",
+    "angular-cookies": "^1.3.0",
+    "angular-resource": "^1.3.0",
+    "angular-route": "^1.3.0",
+    "angular-sanitize": "^1.3.0",
+    "angular-touch": "^1.3.0",
+    "moment": "^2.14.1",
+    "angular-moment": "^0.10.3",
+    "angular-gettext": "^2.3.4",
+    "angularfire": "^2.0.2",
+    "MDBootstrap": "*",
+    "angular-messages": "^1.5.8",
+    "tether": "^1.3.7",
+    "ng-file-upload": "^12.2.12",
+    "ng-token-auth": "^0.0.29",
+    "angular-material": "^1.1.1",
+    "angular-material-icons": "^0.7.1",
+    "angular-toastr": "^2.1.1",
+    "angular-material-data-table": "^0.10.9",
+    "ng-cpf-cnpj": "^0.0.5",
+    "angularLocalStorage": "^0.3.2"
+  },
+  "devDependencies": {
+    "mockfirebase": "0.11.0",
+    "angular-mocks": "^1.3.0"
+  },
+  "appPath": "app",
+  "moduleName": "appApp"
+}

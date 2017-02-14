@@ -1,0 +1,134 @@
+msgid ""
+msgstr ""
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Project-Id-Version: \n"
+
+#: app/views/login.html:61
+msgid "<ng-md-icon icon=\"facebook\"></ng-md-icon>"
+msgstr ""
+
+#: app/views/login.html:64
+msgid "<ng-md-icon icon=\"google-plus\"></ng-md-icon>"
+msgstr ""
+
+#: app/views/login.html:67
+msgid "<ng-md-icon icon=\"twitter\"></ng-md-icon>"
+msgstr ""
+
+#: app/views/account.html:11
+msgid "About Me"
+msgstr ""
+
+#: app/views/account.html:69
+msgid "Account info"
+msgstr ""
+
+#: app/views/historic.html:61
+msgid "Attend"
+msgstr ""
+
+#: app/views/login.html:38
+msgid "Cancel"
+msgstr ""
+
+#: app/views/account.html:50
+msgid "Capabilities"
+msgstr ""
+
+#: app/views/historic.html:185
+msgid "Classfield Me"
+msgstr ""
+
+#: app/views/historic.html:130
+msgid "Closeds"
+msgstr ""
+
+#: app/views/account.html:87
+msgid "Confirm Password"
+msgstr ""
+
+#: app/views/login.html:30
+msgid "Confirm password"
+msgstr ""
+
+#: app/views/login.html:36
+msgid "Create Account"
+msgstr ""
+
+#: app/views/dialog_request_details.html:62
+#: app/views/historic.html:122
+#: app/views/historic.html:60
+msgid "Discard"
+msgstr ""
+
+#: app/views/account.html:21
+#: app/views/login.html:22
+msgid "E-mail"
+msgstr ""
+
+#: app/views/dialog_request_details.html:67
+msgid "I will answer"
+msgstr ""
+
+#: app/views/historic.html:68
+msgid "In Progress"
+msgstr ""
+
+#: app/views/login.html:34
+msgid "Log In"
+msgstr ""
+
+#: app/views/login.html:9
+msgid "Login"
+msgstr ""
+
+#: app/views/account.html:17
+msgid "Name"
+msgstr ""
+
+#: app/views/account.html:106
+msgid "New Email"
+msgstr ""
+
+#: app/views/account.html:82
+msgid "New Password"
+msgstr ""
+
+#: app/views/historic.html:5
+msgid "News <md-badge ng-if=\"solicitationNews.length > 0\" md-colors=\"{background:'warn'}\">{{solicitationNews.length}}</md-badge>"
+msgstr ""
+
+#: app/views/account.html:33
+msgid "No matches found."
+msgstr ""
+
+#: app/views/account.html:38
+msgid "Number"
+msgstr ""
+
+#: app/views/dialog_request_details.html:70
+#: app/views/historic.html:123
+msgid "Ok"
+msgstr ""
+
+#: app/views/account.html:77
+msgid "Old Password"
+msgstr ""
+
+#: app/views/account.html:111
+#: app/views/login.html:26
+msgid "Password"
+msgstr ""
+
+#: app/views/account.html:25
+msgid "Phone"
+msgstr ""
+
+#: app/views/login.html:35
+msgid "Register"
+msgstr ""
+
+#: app/views/dialog_request_details.html:6
+msgid "Request Details"
+msgstr ""

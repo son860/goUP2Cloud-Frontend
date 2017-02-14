@@ -1,0 +1,140 @@
+msgid ""
+msgstr ""
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Project-Id-Version: \n"
+"POT-Creation-Date: \n"
+"PO-Revision-Date: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"X-Generator: Poedit 1.8.8\n"
+"Last-Translator: \n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+"Language: pt_BR\n"
+
+#: app/views/login.html:61
+msgid "<ng-md-icon icon=\"facebook\"></ng-md-icon>"
+msgstr ""
+
+#: app/views/login.html:64
+msgid "<ng-md-icon icon=\"google-plus\"></ng-md-icon>"
+msgstr ""
+
+#: app/views/login.html:67
+msgid "<ng-md-icon icon=\"twitter\"></ng-md-icon>"
+msgstr ""
+
+#: app/views/account.html:11
+msgid "About Me"
+msgstr "Sobre mim"
+
+#: app/views/account.html:69
+msgid "Account info"
+msgstr "Informações da Conta"
+
+#: app/views/historic.html:61
+msgid "Attend"
+msgstr "Assistir"
+
+#: app/views/login.html:38
+msgid "Cancel"
+msgstr "Cancelar"
+
+#: app/views/account.html:50
+msgid "Capabilities"
+msgstr "Capacidades"
+
+#: app/views/historic.html:185
+msgid "Classfield Me"
+msgstr "Classificar-me"
+
+#: app/views/historic.html:130
+msgid "Closeds"
+msgstr "Encerrados"
+
+#: app/views/account.html:87
+msgid "Confirm Password"
+msgstr "Confirme a senha"
+
+#: app/views/login.html:30
+msgid "Confirm password"
+msgstr "Confirmar senha"
+
+#: app/views/login.html:36
+msgid "Create Account"
+msgstr "Criar Conta"
+
+#: app/views/dialog_request_details.html:62 app/views/historic.html:122
+#: app/views/historic.html:60
+msgid "Discard"
+msgstr "Descartar"
+
+#: app/views/account.html:21 app/views/login.html:22
+msgid "E-mail"
+msgstr ""
+
+#: app/views/dialog_request_details.html:67
+msgid "I will answer"
+msgstr "Vou Atender"
+
+#: app/views/historic.html:68
+msgid "In Progress"
+msgstr "Em Progresso"
+
+#: app/views/login.html:34
+msgid "Log In"
+msgstr ""
+
+#: app/views/login.html:9
+msgid "Login"
+msgstr ""
+
+#: app/views/account.html:17
+msgid "Name"
+msgstr "Nome"
+
+#: app/views/account.html:106
+msgid "New Email"
+msgstr "Novo E-mail"
+
+#: app/views/account.html:82
+msgid "New Password"
+msgstr "Nova Senha"
+
+#: app/views/historic.html:5
+msgid ""
+"News <md-badge ng-if=\"solicitationNews.length > 0\" md-colors="
+"\"{background:'warn'}\">{{solicitationNews.length}}</md-badge>"
+msgstr ""
+
+#: app/views/account.html:33
+msgid "No matches found."
+msgstr "Nenhuma equivalência encontrada."
+
+#: app/views/account.html:38
+msgid "Number"
+msgstr "Numero"
+
+#: app/views/dialog_request_details.html:70 app/views/historic.html:123
+msgid "Ok"
+msgstr ""
+
+#: app/views/account.html:77
+msgid "Old Password"
+msgstr "Senha antiga"
+
+#: app/views/account.html:111 app/views/login.html:26
+msgid "Password"
+msgstr "Senha"
+
+#: app/views/account.html:25
+msgid "Phone"
+msgstr "Telefone"
+
+#: app/views/login.html:35
+msgid "Register"
+msgstr "Registrar"
+
+#: app/views/dialog_request_details.html:6
+msgid "Request Details"
+msgstr "Detalhes da Solicitação"
